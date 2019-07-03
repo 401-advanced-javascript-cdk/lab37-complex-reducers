@@ -6,8 +6,8 @@ Reducers made from scratch
 
 ### Links and Resources
 
-- [GitHub PR]()
-- [Netlify Deployment]()
+- [GitHub PR](https://github.com/401-advanced-javascript-cdk/lab37-complex-reducers/pull/1)
+- [Netlify Deployment](https://thirsty-chandrasekhar-d201b4.netlify.com/)
 
 ### Modules
 
@@ -37,34 +37,34 @@ Defines some default state and handles actions related to individual entries bas
 
 #### Operation
 
-Go to the deployment [here]().  The current state of the store can be viewed with Redux Devtools in the browser.
+Go to the deployment [here](https://thirsty-chandrasekhar-d201b4.netlify.com/).  The current state of the store can be viewed with Redux Devtools in the browser.
 
 #### Available Actions
 Actions can be dispatched from the devtools to manipulate the store's state.
 ### Actions for instrument type categories
 * `{
-  type: CREATE_INSTRUMENT_TYPE,
+  type: 'CREATE_INSTRUMENT_TYPE',
   payload: {id, name}
 }`
 * `{
-  type: UPDATE_INSTRUMENT_TYPE,
+  type: 'UPDATE_INSTRUMENT_TYPE',
   payload: {id, name}
 }`
 * `{
-  type: DELETE_INSTRUMENT_TYPE,
+  type: 'DELETE_INSTRUMENT_TYPE',
   payload: {id}
 }`
 
 ### Actions for individual insturments
 * `{
-  type: CREATE_INSTRUMENT,
+  type: 'CREATE_INSTRUMENT',
   payload: {id, typeId, name}
 }`
 * `{
-  type: UPDATE_INSTRUMENT,
+  type: 'UPDATE_INSTRUMENT',
   payload: {id, typeId, name}
 }`
 * `{
-  type: DELETE_INSTRUMENT,
+  type: 'DELETE_INSTRUMENT',
   payload: {id, typeId}
 }`
